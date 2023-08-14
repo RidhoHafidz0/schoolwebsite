@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00FF1A;
+      }
+
+      .satu {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+      }
+
+      .dua {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form {
+        width: 400px;
+        height: 500px;
+        margin: 50px auto;
+        background:  rgba(0, 0, 0, .5);
+        border-radius: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+      }
+
+      .underline {
+        margin: auto;
+        width: 60%;
+        height: 3px;
+        border-top: 1px solid white;
+        margin-top: 10px;
+      }
+
+      .username {
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+      }
+      h3 {
+        color: white;
+        height: 20px;
+        line-height: 100px;
+        margin-left: 20px;
+      }
+
+      .username input {
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+      }
+
+      .password {
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+      }
+      h3 {
+        color: white;
+        height: 20px;
+        line-height: 100px;
+        margin-left: 20px;
+      }
+
+      .password input {
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+      }
+
+      h5 {
+        width: max-content;
+        padding-top: 30px;
+        margin-left: 20px;
+        color: white;
+      }
+
+      h5:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .button {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      button a {
+        color: black;
+        text-decoration: none;
+      }
+
+      button {
+        width: 60%;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: white;
+        color: black;
+        font-size: large;
+        transition: 0.3s;
+      }
+      button:hover {
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+        box-shadow: 2px 2px 1px aqua, -2px -2px 1px aqua;
+      }
+
+      .signup {
+        padding-top: 30px;
+        margin-left: 20px;
+        color: white;
+        text-align: center;
+      }
+      span {
+        color: aqua;
+      }
+
+      span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">
+        <div class="dua">
+          <div class="form">
+            <h1>Login</h1>
+            <div class="underline"></div>
+            <h3>Email :</h3>
+            <div class="username">
+              <input type="email" />
+            </div>
+            <h3>Password :</h3>
+            <div class="password">
+              <input type="password" />
+            </div>
+            <h5>Forgot Password?</h5>
+            <div class="button">
+              <a href="beranda.html"><button><h4>Login</h4></a></button>
+            </div>
+            <h4 class="signup">Not a member? <span>Signup</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

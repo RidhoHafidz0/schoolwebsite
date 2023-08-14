@@ -1,0 +1,937 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-judul {
+    padding-top: 10px;
+    margin-left: 80px;
+}
+
+.menu-info {
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    border: 3px dotted #00FF1A;
+    justify-content: center;
+    margin-right: 70px;
+}
+
+.menu-info ul {
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+.menu-info ul li {
+    list-style: none;
+    padding: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+}
+
+.menu-info .material-symbols-outlined {
+    color: #00FF1A;
+    font-size: 32px;
+}
+
+.sticky-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00FF1A;
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 80px;
+    z-index: 9999;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.menu-list ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list ul li {
+    list-style: none;
+    font-size: 26px;
+    padding: 30px;
+    font-family: 'Jost', sans-serif;
+}
+
+.menu-list ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+
+.search-btn {
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn button {
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.search-btn .material-symbols-outlined {
+    font-size: 35px;
+}
+
+.search-btn input {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+/* Carousel */
+
+.slider{
+    width: 1800px;
+    max-width: 90vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed black;
+}
+
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img{
+    width: 1800px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+
+}
+
+.background {
+    width: 1800px;
+    max-width: 100vw;
+    height: 100%;
+    background-image: url(img/sekolah3.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:opacity(.8);
+}
+
+
+.background .judul-carousel1{
+    margin-top: 10%;
+    margin-left: 7%;
+    font-size: 20px;
+    font-size: 5vw;
+    margin-bottom: -8%;
+    font-family: 'poppins';
+    font-weight: 600;
+    color:whitesmoke;
+}
+
+.background .deskripsi1 {
+    width: 50%;
+    font-size: 30px;
+    margin-left: 8%;
+    padding: 30px;
+    background-color:#00ff1a7e;
+    border-radius: 20px;
+    width: 50%;
+    height: 200px;
+    color: white;
+    font-family: 'poppins';
+}
+
+.background2 {
+    width: 1800px;
+    max-width: 100vw;
+    height: 100%;
+    background-image: url(img/sekolah2.jpeg);
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:opacity(.8);
+}
+
+.background2 .judul-carousel2 {
+    margin-top: 10%;
+    margin-left: 7%;
+    font-size: 20px;
+    font-size: 5vw;
+    margin-bottom: -8%;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-weight: 900;
+    color: white;
+    width: 100%;
+}
+
+.background2 .deskripsi2 {
+    width: 50%;
+    font-size: 30px;
+    margin-left: 8%;
+    padding: 30px;
+    background-color:#00ff1a7e;
+    border-radius: 20px;
+    width: 50%;
+    height: 220px;
+    color: black;
+    font-family: 'poppins';
+    font-weight: 1000;
+}
+
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slider .buttons button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active{
+    width: 30px;
+}
+
+
+/*Fasilitas*/
+.container-fas {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-fas .fas1 {
+    width: 50vh;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profil-atas {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.judul-fas1 {
+    width: 8vw;
+    height: 7vw;
+    background-image: url(img/logo-awal.png);
+    margin-left: 20px;
+    background-repeat: no-repeat;
+}
+
+.fas1 .profil-atas .desk-judul {
+    width: 60%;
+}
+
+.fas1 .profil-atas p {
+    font-size: 2vw;
+    font-family: 'poppins';
+}
+
+.container-fas .profil-bawah {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.profil-bawah p {
+    font-size: 1.1vw;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+
+.container-fas .fas2 {
+    width: 120vh;
+    height: 90vh;
+}
+
+.fas2 .fasA {
+    width: 120vh;
+    height: 85%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fas2 .fasA .visi-misi {
+    width: 60%;
+    height: 85%;
+    margin-right: 40px;
+}
+
+.fas2 .fasA .visi-misi .visi {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vw;
+    font-family: 'poppins';
+    margin-left: 25px;
+}
+
+.fas2 .fasA .visi-misi .visi p {
+    font-size: 1.2vw;
+}
+
+.fas2 .fasA .visi-misi .misi {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+    font-family: 'poppins';
+    margin-left: 25px;
+    margin-top: 70px;
+}
+
+.fas2 .fasA .visi-misi .misi p {
+    font-size: 1.2vw;
+}
+
+.fasA .imgVisi-Misi {
+    height: 60vh;
+    width: 50vh;
+    background-image: url(img/sekolah4.png);
+    border: 1px dashed black;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fas2 .fasB {
+    width: 120vh;
+    height: 6vh;
+    background-color: #00FF1A;
+}
+
+/*Prestasi*/
+
+.container-prestasi{
+    width: 100%;
+    height: 60vh;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-prestasi {
+    width: 30%;
+    height: 90%;
+    background-image: url(img/sekolah5.png);
+    border-radius: 0 100px 0 100px;
+}
+
+.text-box {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.text-box .judul-prestasi {
+    font-size: 2.6vw;
+    font-family: 'poppins';
+    position: relative;
+    top: 10%;
+}
+
+.text-box p {
+    font-size: 1.5vw;
+    font-family: 'poppins';
+    position: relative;
+    top: 20%;
+}
+
+/*Galeri*/
+.judul-galeri {
+   margin-left: 70px;
+   margin-top: 120px;
+   font-size: 40px;
+   font-family: 'poppins';
+   font-weight: 600;
+   color: #00FF1A;
+}
+
+.container-galeri {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container-galeri .card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px  rgba(0, 0, 0, 0.18);
+    transition: 0.5s;
+    border: 2px dotted #00FF1A;
+}
+
+.container-galeri .card:hover {
+    height: 400px;
+}
+
+.container-galeri .card .imgBx{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 220px;
+    background-color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-galeri .card:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.container-galeri .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container-galeri .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    overflow: hidden;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+    font-family: 'poppins';
+}
+
+.container-galeri .card .content h2 {
+    color: #00FF1A;
+}
+
+.container-galeri .card:hover .content {
+    top: 252px;
+    height: 250px;
+}
+
+/*Ekstrakurikuler*/
+.judul-eskul {
+    margin-left: 70px;
+    margin-top: 120px;
+    font-size: 45px;
+    font-family: 'poppins';
+    font-weight: 800;
+    color: #000000;
+ }
+
+
+.container-eskul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+
+
+.as {
+    width: 300px;
+    height: 200px;
+    background-image: url(img/renang.jpg);
+    background-position: center;
+    transition: .5s;
+    display: flex;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.as:hover {
+    width: 400px;  
+}
+
+
+.img-bx {
+    width: 100%;
+    height: 100%;
+    background-color: #00FF1A;
+    border-radius: 20px;
+}
+
+.renang {
+    background-image: url(img/renang.jpg);
+    background-size: cover;
+}
+
+.karate {
+    background-image: url(img/karate.jpg);
+    background-size: cover;
+}
+
+.english {
+    background-image: url(img/english.jpg);
+    background-size: cover;
+}
+
+.paskibra {
+    background-image: url(img/paskibra.jpg);
+    background-size: cover;
+}
+
+.basket {
+    background-image: url(img/basket.jpeg);
+    background-size: cover;
+}
+
+.silat {
+    background-image: url(img/silat.jpg);
+    background-size: cover;
+}
+
+.ia {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: .5s;
+    color: transparent;
+    font-family: 'poppins';
+    border-radius: 20px; 
+    
+}
+
+.ia:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.ia h2 {
+    text-align: center;
+    line-height: 80px;
+}
+
+.ia p {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Footer & Login*/
+.container-footer {
+    width: 100%;
+    height: 450px;
+    background-color: #231F20;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 80%;
+    height: 100%;
+}
+
+.judul-footer-full {
+    width: 100%;
+    height: 100px;
+    margin-left: 70px;
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.judul-footer {
+    width: 20%;
+    height: 100px;
+    background-image: url(img/logo-awal.png);
+    background-repeat: no-repeat;
+}
+
+.judul-footer-full h2 {
+    color: white;
+    font-family: 'poppins';
+    font-size: 5vh;
+    font-weight: 800;
+}
+
+.info-footer {
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 30px;
+    color: white;
+    font-size: 3vh;
+    line-height: 45px;
+}
+
+.info-footer ul li {
+    list-style: none;
+    color: white;
+
+}
+
+.info-footer ul li span {
+    margin-right: 5%;
+    color: #00FF1A;
+}
+
+
+.batas {
+    width: 10%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1330px) {
+    .container-fas .fas2 {
+        width: 70%;
+        height: 90vh;
+    }
+}
+
+
+@media only screen and (max-width: 1350px){
+    nav {
+        margin-top: 20px;
+    }
+
+    .img-judul {
+        margin: auto;
+    }
+
+    .menu-info {
+        display: none;
+    }
+
+    .sticky-nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sticky-nav .search-btn {
+        display: none;
+    }
+
+    .slider {
+        max-width: 90vw;
+        height: 500px;
+    }
+    .slider .buttons button {
+        font-size: 38px;
+    }
+    .background .judul-carousel1{
+        margin-top: 6%;
+        margin-left: 8%;
+        font-size: 15px;
+        font-size: 5vw;
+        color: black;
+    }
+    .background .deskripsi1 {
+        font-size: 12px;
+        font-size: 2vw;
+        padding: 10px;
+        height: 150px;
+    }
+    .background2 .judul-carousel2{
+        margin-top: 6%;
+        margin-left: 8%;
+        font-size: 5vw;
+    }
+    .background2 .deskripsi2 {
+        font-size: 12px;
+        font-size: 2vw;
+        padding: 10px;
+        height: 195px;
+    }
+    .judul-fas1 {
+        width: 12vw;
+        height: 10vw;
+    }
+    .fas1 .profil-atas p {
+        font-size: 2.5vw;
+    }
+    .fasB {
+        display: none;
+    }
+    .fas2 .fasA {
+        width: 96vh;
+    }
+    .profil-bawah p {
+        font-size: 1.28vw;
+    }
+    .fas2 .fasA .visi-misi .visi {
+        font-size: 2.7vw;
+    }
+    .fas2 .fasA .visi-misi .visi p {
+        font-size: 1.3vw;
+    }
+    .fas2 .fasA .visi-misi .misi {
+        font-size: 2.2vw;
+    }
+    .fas2 .fasA .visi-misi .misi p {
+        font-size: 1.13vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .sticky-nav .menu-list ul li {
+        font-size: 22px;
+    }   
+
+    .slider {
+        max-width: 80vw;
+        height: 500px;
+    }
+    .slider .buttons button {
+        font-size: 40px;
+    }
+    .background .judul-carousel1{
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 25px;
+        font-size: 5vw;
+        margin-bottom: -20%;
+        color: white;
+    }
+    .background .deskripsi1 {
+        font-size: 18px;
+        margin-top: 60px;
+        height: 150px;
+        color: white;
+        margin-left: 10%;
+    }
+    .background2 .judul-carousel2{
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 25px;
+        font-size: 5vw;
+        margin-bottom: -20%;
+    }
+    .background2 .deskripsi2 {
+        font-size: 18px;
+        margin-top: 60px;
+        height: 160px;
+        margin-left: 10%;
+    }
+    .fas1 {
+        margin: auto;
+        width: 200vh;
+    }
+    .judul-fas1 {
+        width: 14vw;
+        height: 12vw;
+    }
+    .fas1 .profil-atas p {
+        font-size: 2.3vw;
+    }
+    .profil-bawah p {
+        font-size: 1.5vw;
+    }
+    .fas2 {
+        display: none;
+    }
+
+    .text-box .judul-prestasi {
+        top: 30%;
+    }
+    .text-box p {
+        top: 40%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+    .slider .buttons button {
+        font-size: 38px;
+    }
+    .background .judul-carousel1{
+        margin-top: 7%;
+        margin-left: 10%;
+        font-size: 5vw;
+    }
+    .background .deskripsi1 {
+        font-size: 18px;
+        height: 180px;
+    }    
+    .background2 .judul-carousel2{
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 25px;
+        font-size: 5vw;
+        color: black;
+    }
+    .background2 .deskripsi2 {
+        font-size: 18px;
+        height: 230px;
+    }    
+    
+    .judul-fas1 {
+        width: 14vw;
+        height: 12vw;
+    }
+    .fas1 .profil-atas p {
+        font-size: 2vw;
+    }
+    .profil-bawah p {
+        font-size: 1.6vw;
+    }
+    .fas2 .fasA .visi-misi .visi {
+        font-size: 3vw;
+    }
+    .fas2 .fasA .visi-misi .visi p {
+        font-size: 2vw;
+    }
+    .fas2 .fasA .visi-misi .misi {
+        margin-top: 110px;
+        font-size: 2.8vw;
+    }
+    .fas2 .fasA .visi-misi .misi p {
+        font-size: 2vw;
+    }
+    .imgVisi-Misi {
+        display: none;
+    }
+    .fas1 {
+        width: 200vh;
+        margin-left: 40px;
+    }
+    .fas2 .fasA {
+        margin-left: 30px;
+        width: 60vh;
+        align-items: start;
+    }
+    .fas2 {
+        display: block;
+    }
+}
